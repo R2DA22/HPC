@@ -14,7 +14,7 @@ __global__ void vecAdd(int *A, int *B, int *C,int n){
 	//int i = blockIdx.x
 	if(i< n){
 		C[i]=A[i]+B[i];
-		//printf("%i + %i = %i \n",A[i] ,B[i],C[i]);
+		printf("%i + %i = %i \n",A[i] ,B[i],C[i]);
 		
 	}
 
@@ -56,7 +56,7 @@ int main(){
 	int *A;
     int *B;
   	int *C;
-	for( j=0; j<10;j++){
+	for( j=0; j<1;j++){
     
 		A=(int *) malloc(SIZE[j]*sizeof(int));
 	
